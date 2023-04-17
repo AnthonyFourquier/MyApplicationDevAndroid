@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "My Application2"
+include ':app'
+include ':cadox'
+include ':tpkotlin'
+include ':mod4interactionvue'
+include ':mod5'
+include ':mod6'
+include ':mod7lifecycle'

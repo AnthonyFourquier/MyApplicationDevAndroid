@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CadoX</string>
+    <string name="detail_d_un_article">DETAIL D\'UN ARTICLE</string>
+    <string name="des_lunettes_de_soleil">Des lunettes de soleil</string>
+    <string name="ray_ban_rb_4259_601_19_51_20">RAY-BAN RB 4259 601/19 51/20</string>
+    <string name="_85_0">85.0 €</string>
+    <string name="_01_09_2020">01/09/2020</string>
+    <string name="https_www_chosesasavoir_com_pourquoi_fait_on_un_doigt_dhonneur">https://www.chosesasavoir.com/pourquoi-fait-on-un-doigt-dhonneur/</string>
+    <string name="gallery">Gallery</string>
+    <string name="edit">Edit</string>
+    <string name="labal_title_dialog">Edition Article</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
