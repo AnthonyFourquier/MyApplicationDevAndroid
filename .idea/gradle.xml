@@ -12,10 +12,13 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cadox" />
+            <option value="$PROJECT_DIR$/mod10recyclerview" />
             <option value="$PROJECT_DIR$/mod4interactionvue" />
             <option value="$PROJECT_DIR$/mod5" />
             <option value="$PROJECT_DIR$/mod6" />
             <option value="$PROJECT_DIR$/mod7lifecycle" />
+            <option value="$PROJECT_DIR$/mod9room" />
+            <option value="$PROJECT_DIR$/tpdice" />
             <option value="$PROJECT_DIR$/tpkotlin" />
           </set>
         </option>

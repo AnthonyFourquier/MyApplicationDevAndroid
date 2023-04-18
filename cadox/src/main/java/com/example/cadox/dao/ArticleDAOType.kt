@@ -1,5 +1,8 @@
 package com.example.cadox.dao
 
-class DAOType {
-    
+enum class ArticleDAOType {
+    MEMORY,
+    DB,
+    INTERNET
+
 }

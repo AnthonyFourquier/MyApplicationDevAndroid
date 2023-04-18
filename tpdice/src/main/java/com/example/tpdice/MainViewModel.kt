@@ -1,17 +1,12 @@
-package com.example.mod7lifecycle
+package com.example.tpdice
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    var cpt = MutableLiveData(0)
-    fun incrementCounter() {
-        //On affecte a notre compteur l'ancienne valueur + 1
-        cpt.value =  cpt.value?.plus(1)
-    }
+    var dice = MutableLiveData(0)
 
-    fun decrementCounter() {
-        //On affecte a notre compteur l'ancienne valueur - 1
-        cpt.value =  cpt.value?.minus(1)
+    fun launchDice(diceMax : Int) {
+        dice.value = (1..diceMax).random();
     }
 }
