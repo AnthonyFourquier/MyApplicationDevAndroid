@@ -13,6 +13,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.cadox.R
 import com.example.cadox.bo.Article
 import com.example.cadox.databinding.FragmentArticleViewBinding
@@ -21,6 +22,8 @@ import java.time.LocalDate
 
 class ArticleViewFragment : Fragment() {
     private lateinit var binding : FragmentArticleViewBinding
+    private val args: ArticleViewFragmentArgs by navArgs()
+
     val intentSendSms = Intent(Intent.ACTION_SENDTO).apply {
         data = Uri.parse("smsto:0612345678")  // This ensures only SMS apps respond
         putExtra("sms_body", "test")
@@ -32,14 +35,6 @@ class ArticleViewFragment : Fragment() {
         startActivity(intentSendSms)
 
     }
-    var article = Article(
-        id = 2,
-        intitule = "Lunette",
-        description = "blablablabla lbablalbla",
-        prix = 100.0,
-        niveau = 2,
-        url = "https://www.chosesasavoir.com/pourquoi-fait-on-un-doigt-dhonneur"
-    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -53,10 +48,10 @@ class ArticleViewFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.article = article
+        binding.article = args.article
 
         binding.buttonImageInternet.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(article.url)))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(args.article.url)))
         }
 
         val alertDialogBuilder = AlertDialog.Builder(requireContext()).apply {

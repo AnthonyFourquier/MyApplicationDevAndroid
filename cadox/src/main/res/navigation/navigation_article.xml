@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_article"
-    app:startDestination="@id/articleViewFragment">
+    app:startDestination="@id/articleListFragment">
 
     <fragment
         android:id="@+id/articleViewFragment"
@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_articleView_to_articleEdit"
             app:destination="@id/articleEditFragment" />
+        <argument
+            android:name="article"
+            app:argType="com.example.cadox.bo.Article" />
     </fragment>
     <fragment
         android:id="@+id/articleEditFragment"
@@ -21,5 +24,14 @@
         <argument
             android:name="article"
             app:argType="com.example.cadox.bo.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleListFragment"
+        android:name="com.example.cadox.ui.ArticleListFragment"
+        android:label="fragment_article_list_list"
+        tools:layout="@layout/fragment_article_list_list" >
+        <action
+            android:id="@+id/action_articleListFragment_to_articleViewFragment"
+            app:destination="@id/articleViewFragment" />
     </fragment>
 </navigation>

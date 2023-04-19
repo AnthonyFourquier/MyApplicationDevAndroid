@@ -8,14 +8,12 @@ import com.example.cadox.bo.Article
 
 @Dao
 interface IArticleDAO {
-    @Query("SELECT * FROM article WHERE uid = :uid")
+    @Query("SELECT * FROM article WHERE id = :id")
     fun getArticleByID(id : Long) : Article
     @Query("SELECT * FROM article")
     fun getArticleByAll() : List<Article>
     @Delete
-    fun deleteArticleById(id : Long) : Long
-    @Delete
-    fun deleteArticleByAll() : List<Long>
+    fun deleteArticleById(article : Article)
     @Insert
-    fun addArticle(article : Article) : Article
+    fun addArticle(article : Article)
  }

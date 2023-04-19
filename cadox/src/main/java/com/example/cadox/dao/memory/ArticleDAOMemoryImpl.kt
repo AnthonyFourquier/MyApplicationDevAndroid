@@ -12,15 +12,12 @@ class ArticleDAOMemoryImpl : IArticleDAO {
         TODO("Not yet implemented")
     }
 
-    override fun deleteArticleById(id: Long): Long {
+    override fun deleteArticleById(article : Article) {
         TODO("Not yet implemented")
     }
 
-    override fun deleteArticleByAll(): List<Long> {
-        TODO("Not yet implemented")
-    }
 
-    override fun addArticle(article: Article): Article {
+    override fun addArticle(article: Article) {
         TODO("Not yet implemented")
     }
 

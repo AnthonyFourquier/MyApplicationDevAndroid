@@ -12,12 +12,12 @@ object ArticleRepository {
         return iArticleDao.getArticleByID(id)
     }
 
-    fun addArticle(article: Article) : Article {
+    fun addArticle(article: Article) {
         return iArticleDao.addArticle(article)
     }
 
-    fun deleteArticleById(id : Long) : Long {
-        return iArticleDao.deleteArticleById(id)
+    fun deleteArticleById(article : Article) {
+        return iArticleDao.deleteArticleById(article)
     }
 
     fun getArticleByAll() : List<Article> {
